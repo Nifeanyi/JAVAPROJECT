@@ -49,6 +49,7 @@ public class ApplicationLaunch {
 			System.out.println("The program will now exit\n");
 			scanner.close();
 			return;
+			
 		}
 		FileIdentityDAO dao;
 		
@@ -161,7 +162,7 @@ public class ApplicationLaunch {
 			 * case 4 - Exit; exits the while loop to exit the application
 			 */
 		case "4":
-			System.out.println("The program will now exit\n");
+			System.out.println("Thank you for using our Banking system exit\n");
 			scanner.close();
 			return;
 
