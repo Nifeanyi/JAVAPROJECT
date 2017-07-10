@@ -1,10 +1,10 @@
 /**
  * 
  */
-package fr.vs.iamcorevishsharma.service.dao;
+package fr.epita.iam.service.dao;
 
 /**
- * @author Vishal
+ * @author Nwadishifeanyi
  *
  */
 public class DAOResourceException extends Exception {

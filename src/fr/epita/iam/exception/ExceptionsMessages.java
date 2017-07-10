@@ -1,7 +1,7 @@
-package fr.vs.iamcorevishsharma.exception;
+package fr.epita.iam.exception;
 
 /**
- * @author Vishal
+ * @author Nwadishifeanyi
  *	the enum file for DAO exception messages
  */
 public enum ExceptionsMessages {

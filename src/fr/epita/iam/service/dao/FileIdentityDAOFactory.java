@@ -1,13 +1,13 @@
 /**
  * 
  */
-package fr.vs.iamcorevishsharma.service.dao;
+package fr.epita.iam.service.dao;
 
-import fr.vs.iamcorevishsharma.exception.InitializationException;
-import fr.vs.iamcorevishsharma.tests.service.dao.IdentityDAOInterface;
+import fr.epita.iam.exception.InitializationException;
+import fr.epita.iam.tests.service.dao.IdentityDAOInterface;
 
 /**
- * @author Vishal
+ * @author Nwadishifeanyi
  *
  */
 public class FileIdentityDAOFactory {

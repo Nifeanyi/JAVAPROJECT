@@ -1,7 +1,7 @@
 /**
  * 
  */
-package fr.vs.iamcorevishsharma.service.dao;
+package fr.epita.iam.service.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -11,19 +11,19 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import fr.vs.iamcorevishsharma.datamodel.Identity;
-import fr.vs.iamcorevishsharma.exception.DeleteException;
-import fr.vs.iamcorevishsharma.exception.ExceptionsMessages;
-import fr.vs.iamcorevishsharma.exception.InitializationException;
-import fr.vs.iamcorevishsharma.exception.SaveException;
-import fr.vs.iamcorevishsharma.exception.SearchException;
-import fr.vs.iamcorevishsharma.exception.UpdateException;
-import fr.vs.iamcorevishsharma.tests.service.dao.IdentityDAOInterface;
+import fr.epita.iam.datamodel.Identity;
+import fr.epita.iam.exception.DeleteException;
+import fr.epita.iam.exception.ExceptionsMessages;
+import fr.epita.iam.exception.InitializationException;
+import fr.epita.iam.exception.SaveException;
+import fr.epita.iam.exception.SearchException;
+import fr.epita.iam.exception.UpdateException;
+import fr.epita.iam.tests.service.dao.IdentityDAOInterface;
 
 /**
  * This class is dealing with the Identity Persistence using a JDBC back-end
  * 
- * @author Vishal
+ * @author Nwadishifeanyi
  *
  */
 public class FileIdentityDAO implements IdentityDAOInterface{

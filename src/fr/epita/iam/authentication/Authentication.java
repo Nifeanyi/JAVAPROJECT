@@ -1,4 +1,4 @@
-package fr.vs.iamcorevishsharma.authentication;
+package fr.epita.iam.authentication;
 
 public class Authentication {
 	

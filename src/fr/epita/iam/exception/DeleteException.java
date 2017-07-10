@@ -1,10 +1,10 @@
 /**
  * 
  */
-package fr.vs.iamcorevishsharma.exception;
+package fr.epita.iam.exception;
 
 /**
- * @author Vishal
+ * @author Nwadishifeanyi
  * Exception for delete
  */
 public class DeleteException extends Exception {

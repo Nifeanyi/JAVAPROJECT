@@ -1,11 +1,11 @@
 /**
  * 
  */
-package fr.vs.iamcorevishsharma.exception;
+package fr.epita.iam.exception;
 
 
 /**
- * @author Vishal
+ * @author Nwadishifeanyi
  * This is the initialization exception
  */
 public class InitializationException extends Exception {

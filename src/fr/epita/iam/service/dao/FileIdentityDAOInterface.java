@@ -1,13 +1,13 @@
-package fr.vs.iamcorevishsharma.service.dao;
+package fr.epita.iam.service.dao;
 
 import java.util.List;
 
-import fr.vs.iamcorevishsharma.datamodel.Identity;
-import fr.vs.iamcorevishsharma.exception.DeleteException;
-import fr.vs.iamcorevishsharma.exception.SaveException;
-import fr.vs.iamcorevishsharma.exception.SearchException;
-import fr.vs.iamcorevishsharma.exception.UpdateException;
-import fr.vs.iamcorevishsharma.service.dao.DAOResourceException;
+import fr.epita.iam.datamodel.Identity;
+import fr.epita.iam.exception.DeleteException;
+import fr.epita.iam.exception.SaveException;
+import fr.epita.iam.exception.SearchException;
+import fr.epita.iam.exception.UpdateException;
+import fr.epita.iam.service.dao.DAOResourceException;
 
 public interface FileIdentityDAOInterface {
 	

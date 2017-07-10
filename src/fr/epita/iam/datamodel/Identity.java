@@ -1,16 +1,17 @@
 /**
  * 
  */
-package fr.vs.iamcorevishsharma.datamodel;
+package fr.epita.iam.datamodel;
 
 /**
- * @author Vishal
+ * @author Nwadishifeanyi
  *
  */
 public class Identity {
 	
 	private String displayName;
 	private String email;
+	private String DOB;
 	private String uid;
 	
 	
@@ -19,11 +20,13 @@ public class Identity {
 	/**
 	 * @param displayName
 	 * @param email
+	 * @param DOB
 	 * @param uid
 	 */
 	public Identity(String displayName, String email, String uid) {
 		this.displayName = displayName;
 		this.email = email;
+		this.DOB = DOB;
 		this.uid = uid;
 	}
 	
@@ -52,6 +55,18 @@ public class Identity {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+		/**
+		 * @return the DOB
+		 */
+		public String getDOB() {
+			return DOB;
+		}
+		/**
+		 * @param DOB the DOB to set
+		 */
+		public void setDOB(String DOB) {
+			this.DOB = DOB;
+	}
 	/**
 	 * @return the uid
 	 */
@@ -72,7 +87,7 @@ public class Identity {
 	@Override
 	public String toString() {
 		return "Identity [displayName=" + displayName + ", email=" + email
-				+ ", uid=" + uid + "]";
+				+ ", DOB=" + DOB + ", uid=" + uid + "]";
 	}
 		
 }
