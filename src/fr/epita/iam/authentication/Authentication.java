@@ -4,7 +4,7 @@ public class Authentication {
 	
 	public boolean authenticate(String username, String password) {
 		// FIXME implement this authentication method
-		if (username .equals("admin") && password .equals("admin"))
+		if (username .equals("admin") && password .equals("admin01"))
 		return true;
 		else 
 			return false;
