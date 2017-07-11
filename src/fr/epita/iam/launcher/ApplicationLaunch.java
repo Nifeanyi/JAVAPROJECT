@@ -79,8 +79,9 @@ public class ApplicationLaunch {
 		System.out.println("1. Create an Identity");
 		System.out.println("2. Modify an Identity");
 		System.out.println("3. Delete an Identity");
-		System.out.println("4. quit");
-		System.out.println("your choice (1|2|3|4) ? : ");
+		System.out.println("4. Search all Identity");
+		System.out.println("5. quit");
+		System.out.println("your choice (1|2|3|4|5) ? : ");
 		String menuAnswer = scanner.nextLine();
 		
 		switch (menuAnswer) {
@@ -164,8 +165,10 @@ public class ApplicationLaunch {
 			}
 			System.out.println("Identity deleted\n");
 			break;
-
-			/*
+			
+	
+			
+		/*
 			 * case 4 - Exit; exits the while loop to exit the application
 			 */
 		case "4":

@@ -12,10 +12,10 @@ public class SearchException extends Exception {
 	private String searchFault;
 	
 	/**
-	 * @param message
+	 * @param string 
 	 */
-	public SearchException(String message) {
-		this.searchFault = message;
+	public SearchException(String string) {
+		this.searchFault = getMessage();
 	}
 
 	/**

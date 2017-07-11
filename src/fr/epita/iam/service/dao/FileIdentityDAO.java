@@ -42,7 +42,7 @@ public class FileIdentityDAO implements IdentityDAOInterface{
 
 	private static FileIdentityDAO instance;
 	
-	private FileIdentityDAO() throws InitializationException {
+	public FileIdentityDAO() throws InitializationException {
 		try {
 			this.connection = getConnection();
 		} catch (SQLException e) {
@@ -162,6 +162,34 @@ public class FileIdentityDAO implements IdentityDAOInterface{
 			throw dde;
 		}
 	}
+	
+	public List<Identity> search1(Identity criteria) throws SearchException {
+		List<Identity> returnedList = new ArrayList<Identity>();
+		String qry="SELECT * from iam where uid=?";
+		try (Connection conn = this.getConnection();
+				PreparedStatement pstmt = conn
+						.prepareStatement(qry)){
+				 
+				pstmt.setString(1, criteria.getUid());
+
+				ResultSet results = pstmt.executeQuery();
+
+				while (results.next()) {
+					String displayName = results.getString("displayname");
+					String email = results.getString("email");
+					String uid=results.getString("uid");
+					returnedList.add(new Identity(displayName,email, uid));
+
+				}
+			} catch (SQLException sqle) {
+				SearchException daose = new SearchException(null);
+				daose.initCause(sqle);
+				throw daose;
+			}
+
+			return returnedList;
+		    }
+				
 	
 	
 	public void releaseResources() throws DAOResourceException{
